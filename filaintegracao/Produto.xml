@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<produto>
+	<codigo>102</codigo>
+	<nome>MongoDB</nome>
+	<descricao>Construa novas aplicações com novas tecnologias</descricao>
+	<valor>29.90</valor>
+	<qtd>89</qtd>
+	<status></status>
+	<img1>assets/img/livro-node.jpg</img1>
+	<img2></img2>
+	<img3></img3>
+	<img4></img4>
+	<img5></img5>
+	<ativo>true</ativo>
+	<categoria>
+		<codigo>1</codigo>
+	</categoria>
+	<fornecedor>
+		<codigo>1</codigo>
+	</fornecedor>
+</produto>

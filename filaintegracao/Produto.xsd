@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="produto" type="produto"/>
+
+  <xs:complexType name="produto">
+    <xs:sequence>
+      <xs:element name="codigo" type="xs:long" minOccurs="0"/>
+      <xs:element name="nome" type="xs:string" minOccurs="0"/>
+      <xs:element name="descricao" type="xs:string" minOccurs="0"/>
+      <xs:element name="valor" type="xs:decimal" minOccurs="0"/>
+      <xs:element name="qtd" type="xs:int" minOccurs="0"/>
+      <xs:element name="status" type="xs:string" minOccurs="0"/>
+      <xs:element name="img1" type="xs:string" minOccurs="0"/>
+      <xs:element name="img2" type="xs:string" minOccurs="0"/>
+      <xs:element name="img3" type="xs:string" minOccurs="0"/>
+      <xs:element name="img4" type="xs:string" minOccurs="0"/>
+      <xs:element name="img5" type="xs:string" minOccurs="0"/>
+      <xs:element name="ativo" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="categoria" type="Categoria" minOccurs="0"/>
+      <xs:element name="fornecedor" type="Fornecedor" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Categoria">
+    <xs:sequence>
+      <xs:element name="codigo" type="xs:long" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Fornecedor">
+    <xs:sequence>
+      <xs:element name="codigo" type="xs:long" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

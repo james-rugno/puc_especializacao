@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="ui-g">
+
+      <form autocomplete="off" (ngSubmit)="pesquisar()">
+
+        <div class="ui-g-12">
+          <h1>Produtos</h1>
+        </div>
+
+        <div class="ui-g-12 ui-fluid">
+          <label>O que você deseja buscar?</label>
+          <tr>
+            <td>
+              <input pInputText type="text" name="nome" [(ngModel)]="filtro.nome">
+              <p-dropdown placeholder="Selecione..." [autoWidth]="false"
+              [filter]="true" [options]="categorias"
+              (onChange)="carregarCategorias()"
+              required></p-dropdown>
+            </td>
+          </tr>
+        </div>
+
+        <div class="ui-g-12">
+          <button pButton type="submit" label="Pesquisar"></button>
+        </div>
+      </form>
+    </div>
+   <br/>
+
+   <div class="ui-g">
+      <div class="ui-g-12">
+        <p-table [value]="produtos" [responsive]="true"
+          [paginator]="true" [rows]="filtro.itensPorPagina"
+          [lazy]="true" [totalRecords]="totalRegistros"
+          (onLazyLoad)="aoMudarPagina($event)"
+          #tabela>
+
+          <ng-template pTemplate="header">
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th class="col-acoes-header"></th>
+            </tr>
+          </ng-template>
+
+          <ng-template pTemplate="body" let-produto>
+              <tr>
+                  <td align="center"><img src="{{ produto.img1 }}" alt="" style="width: 220px"></td>
+                  <td align="center"><h3>{{ produto.nome }}</h3></td>
+                  <td><p>{{ produto.descricao }}</p></td>
+                  <td><p>R$ {{ produto.valor | number:'1.2-2' }}</p></td>
+                  <td><p>Vendido por {{ produto.fornecedor?.nomeFantasia }}</p></td>
+                  <td><button pButton label="Comprar"  [routerLink]="['/login']"></button></td>
+              </tr>
+          </ng-template>
+
+          <ng-template pTemplate="emptymessage">
+            <tr>
+              <td colspan="5">
+                Nenhuma produto encontrada
+              </td>
+            </tr>
+          </ng-template>
+        </p-table>
+      </div>
+    </div>
+  </div>

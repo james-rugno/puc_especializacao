@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: controle-de-vendas-api
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: James
+Implementation-Vendor-Id: br.com.puc
+Build-Jdk: 1.8.0_201
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/controle-de-vendas-api
+Created-By: Maven Integration for Eclipse
+

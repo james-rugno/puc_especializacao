@@ -1,0 +1,75 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty",
+      "name": "algamoney",
+      "type": "br.com.puc.api.config.property.ComprasApiProperty"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty",
+      "name": "algamoney.mail",
+      "sourceMethod": "public br.com.puc.api.config.property.ComprasApiProperty.Mail getMail() ",
+      "type": "br.com.puc.api.config.property.ComprasApiProperty$Mail"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty",
+      "name": "algamoney.s3",
+      "sourceMethod": "public br.com.puc.api.config.property.ComprasApiProperty.S3 getS3() ",
+      "type": "br.com.puc.api.config.property.ComprasApiProperty$S3"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty",
+      "name": "algamoney.seguranca",
+      "sourceMethod": "public br.com.puc.api.config.property.ComprasApiProperty.Seguranca getSeguranca() ",
+      "type": "br.com.puc.api.config.property.ComprasApiProperty$Seguranca"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty$Mail",
+      "name": "algamoney.mail.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty$Mail",
+      "name": "algamoney.mail.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty$Mail",
+      "name": "algamoney.mail.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty$Mail",
+      "name": "algamoney.mail.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty",
+      "name": "algamoney.origin-permitida",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty$S3",
+      "name": "algamoney.s3.access-key-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty$S3",
+      "name": "algamoney.s3.bucket",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty$S3",
+      "name": "algamoney.s3.secret-access-key",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "br.com.puc.api.config.property.ComprasApiProperty$Seguranca",
+      "name": "algamoney.seguranca.enable-https",
+      "type": "java.lang.Boolean"
+    }
+  ]
+}
